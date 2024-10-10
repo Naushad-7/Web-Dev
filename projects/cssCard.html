@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Card </title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+        .main{
+            background-color: rgb(185, 188, 190);
+            /* border: 2px solid black; */
+            width: 480px;
+            height: 95vh;
+            position: relative;
+            left: 450px;
+            top: auto;
+        }
+
+        .card{
+            /* border: 1px solid red; */
+            margin: 10px;
+            width: 400px;
+            height: 86vh;
+            margin-top: 20px;
+            /* height: 80vh; */
+            position: relative;
+            left: 30px;
+            top: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(44, 43, 43, 0.575), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-color: white;
+        }
+
+        .card img{
+            width: 360px;
+            height: 200px;
+            margin: 10px;
+            margin-left: 20px;
+            /* padding: 10px; */
+            /* border: 1px solid black; */
+            border-radius: 15px;
+        }
+        .capsule{
+            text-align: center;
+            /* border: 1px solid rgb(2, 2, 2); */
+            border-radius: 15px;
+            font-size: 15px;
+            /* background-color: rgb(27, 125, 210); */
+            position: relative;
+            left: 30px;
+            margin: 5px;
+            padding: 3px;
+            background-color: white;
+        }
+
+        .heading{
+            text-align: left;
+            margin: 10px;
+            color: rgb(186, 20, 20);
+            background-color: white;
+            font-size: 30px;
+        }
+        p{
+            font-size: 16px;
+            font-family: copperplate, papyrus,fantasy;
+            width: 380px;
+            margin: 8px;
+            background-color: white;
+        }
+        .last{
+            border: 1px solid black;
+            border-radius: 15px;
+            text-align: center;
+            margin-left: 150px;
+            margin-bottom: 10px;
+            padding: 6px;
+            color: rgb(13, 164, 178);
+            font-weight: bolder;
+            background-color: rgb(180, 241, 241);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="card">
+            <img src="/projects/project Pic/SheikhZayedGrandMosque.jpg" alt="">
+            <button class="capsule">
+                Nature
+            </button>
+
+            <button class="capsule">
+                Lake
+            </button>
+            <h1 class="heading">
+                Shaikh Zayed Garnd Masjid
+            </h1>
+            <p>The Sheikh Zayed Grand Mosque is located in Abu Dhabi, UAE.
+                It is one of the largest mosques in the world, accommodating over 41,000 worshippers.
+                The mosque was completed in 2007 after 11 years of construction.
+                It features 82 domes and over 1,000 columns.
+                The mosque’s chandeliers are gilded with 24-carat gold.
+                It houses the world’s largest hand-knotted carpet.</p>
+
+                <button class="last">
+                    Read More
+                </button>
+        </div>
+    </div>
+</body>
+</html>

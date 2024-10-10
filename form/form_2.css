@@ -1,0 +1,29 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+h1{
+    text-align: center;
+    color: #c22828; 
+}
+.heading{
+    background-color: aqua;
+    margin: 0px;
+}
+
+.heading P{
+    text-align: center;
+    font-size: large;
+    color: rgb(48, 197, 243);
+}
+
+.form{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.form form label{
+    font-size: large;
+    text-align: start;
+}

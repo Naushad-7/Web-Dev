@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .relative-div {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    border: 1px solid black;
+}
+
+img{
+    width: 500px;
+    height: 300px;
+}
+
+.relative-div img {
+
+    position: absolute;
+}
+
+.img1 {
+    top: 10px;
+    left: 10px;
+}
+
+.img2 {
+    top: 10px;
+    right: 10px;
+}
+
+.img3 {
+    bottom: 10px;
+    left: 10px;
+}
+
+.img4 {
+    bottom: 10px;
+    right: 10px;
+}
+
+.second-div {
+    position: absolute;
+    top: 100vh; /* Positioned after the first div */
+    width: 100%;
+    height: 300px;
+    border: 1px solid blue;
+}
+
+.second-div img {
+    position: absolute;
+}
+
+.img5 {
+    top: 10px;
+    left: 10px;
+}
+
+.img6 {
+    top: 10px;
+    right: 10px;
+}
+
+.img7 {
+    bottom: 10px;
+    left: 10px;
+}
+
+.img8 {
+    bottom: 10px;
+    right: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="relative-div">
+        <img src="projects/beach.jpg" class="img1">
+        <img src="projects/denim jeans.jpg" class="img2">
+        <img src="projects/logo_mustang.jpg" class="img3">
+        <img src="projects/Pillow.jpg" class="img4">
+    </div>
+    
+    <div class="second-div">
+        <img src="projects/beach.jpg" class="img1">
+        <img src="projects/denim jeans.jpg" class="img2">
+        <img src="projects/logo_mustang.jpg" class="img3">
+        <img src="projects/Pillow.jpg" class="img4">
+    </div>
+    
+</body>
+</html>

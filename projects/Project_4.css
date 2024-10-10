@@ -1,0 +1,230 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.heading{
+    font-family: copperplate, papyrus,fantasy;
+    font-weight: bolder;
+    font-size: larger;
+    color: rgba(7, 168, 29, 0.685);
+    text-align: center;
+    margin: 2%;
+}
+
+.headText{
+    font-family: copperplate, papyrus,fantasy;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(238, 210, 86);
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+}
+
+.container{
+    border: solid blue 2px;
+    /* width: 80%; */
+    margin: 10%;
+}
+
+
+.column{
+    display: inline-block;
+    width: 250px;
+    /* height: 50px; */
+    margin: 30px;
+    box-sizing: border-box;
+    border: solid black 1px;
+    border-spacing: 10px;
+    font-family: copperplate, papyrus,fantasy;
+    position: relative;
+    left: 60px;
+}
+
+.column img{
+    border: 2px solid purple;
+    border-radius: 20%;
+    width: 200px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+#middle{
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+    margin: 10%;
+    text-align: center;
+    font-family: copperplate, papyrus,fantasy;
+}
+
+#middle h1{
+    margin-top: 2%;
+}
+#middle p{
+    margin-top: 1%;
+}
+
+
+.dispImg img{
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    width: 900px;
+    height: 600px;
+    display: block;
+    /* margin: auto; */
+    /* margin-top: 10%; */
+    position: relative;
+    top: 60px;
+    left: 80px;
+}
+
+.thirdSection{
+    /* border: 2px solid black; */
+    font-family: copperplate, papyrus,fantasy;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 5%;
+
+}
+
+.thirdSection h1 {
+    margin: 2%;
+
+}
+.thirdSection p{
+    margin: 1%;
+}
+
+.card{
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    margin: 30px;
+    box-sizing: border-box;
+    /* border: solid black 1px; */
+    border-spacing: 10px;
+}
+
+
+
+.card img{
+    width: 200px;
+    height: 200px;
+}
+
+.card p{
+    margin: 5%;
+}
+
+.card h1{
+    margin: 5%;
+}
+
+/* Customer SEction */
+
+.customers{
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+    margin: 4%;
+    margin-top: 6%;
+}
+
+.customers h1{
+    text-align: center;
+    font-family:  copperplate, papyrus,fantasy;
+    font-weight: bolder;
+    font-size: 50px;
+    color: red;
+
+}
+
+.customer{
+    display: inline-block;
+    width: 300px;
+    /* height: 30px; */
+    /* margin: 30px; */
+    box-sizing: border-box;
+    /* border: solid black 2px; */
+    border-spacing: 10px;
+    margin: 4%;
+    font-family:  copperplate, papyrus,fantasy;
+}
+
+.custImg img{
+    border:  1px solid red;
+    border-radius: 5%;
+    width: 280px;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 8px;
+    box-sizing: border-box;
+    
+    
+}
+
+.customer p{
+    margin-bottom: 10px;
+}
+
+#bottom{
+    /* border: 2px solid black; */
+    /* text-align: center; */
+    font-family: copperplate, papyrus,fantasy;
+    font-size: large;
+    margin: 5%;
+    /* box-sizing: border-box; */
+
+}
+
+.bottom{
+    text-align: center;
+    margin: 5%;
+
+}
+
+/* .allReviews{
+    border: solid palevioletred 2px;
+    /* height: 100vh; */
+    
+
+.reviews{
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    margin: 4%;
+    box-sizing: border-box;
+    /* border: solid black 1px; */
+    border-spacing: 10px;
+    
+}
+ .revimg img{
+    border: 1px solid rgba(7, 168, 29, 0.685);
+   width: 200px;
+   height: 200px;
+   margin-bottom: 20px;
+}
+
+    
+/* 
+    here I started the editing the code again for the next topic 
+    that is postioning and the size units 
+    first I'll give the position to the each section image or paragraph and 
+    I'll use the size as well to know th diffrence 
+*/
+
+
+.column .img1{
+    /* position: absolute; */
+    /* top: 300px; */
+    /* left: 200px; */
+    /* right: 500px; */
+}
+
+.column .img2{
+    /* position: absolute; */
+    /* top: 200px; */
+    /* right: 400px; */
+    /* bottom: 200px; */
+}

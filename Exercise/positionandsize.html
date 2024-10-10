@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning and size</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .position{
+            background-color: black;
+            border: 2px solid red;
+            /* display: inline-block; */
+            width: 100vw;
+            height: 100vh;
+            /* position: relative; */
+        }
+        img{
+            /* display: inline-block; */
+            width: 300px;
+            height: 300px;
+            /* position: relative; */
+            top: 50%;
+        }
+        .img1{
+            position: relative;
+            top: 10px;
+            left: 10px;
+        }
+
+        .img2{
+            position: relative;
+            top: 300px;
+            right: 30px;
+        }
+
+        .img3{
+            position: relative;
+            bottom:40px ;
+            left: 40px;
+            top: 40px;
+           
+        }
+        .img4{
+            position: absolute;
+            top: 40px;
+            right: 40px;
+        }
+
+
+        .position1{
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            border: 2px solid blue;
+            top: 100px;
+            
+        }
+        .img11{
+            position: absolute;
+            top: 400px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <!-- This is about the Position in Html and the size units of the html -->
+     <div class="position">
+
+         <img class="img1" src="/projects/Pillow.jpg" alt="Pillow">
+         <img class="img2" src="/projects/beach.jpg" alt="">
+         <img class="img3" src="/projects/laptop.jpg" alt="">
+         <img class="img4" src="/projects/MY_Pic.png" alt="">
+         
+        </div>
+
+
+        <div class="position1">
+
+            <img class="img11" src="/projects/Pillow.jpg" alt="Pillow">
+            <img class="img22" src="/projects/beach.jpg" alt="">
+            <img class="img33" src="/projects/laptop.jpg" alt="">
+            <img class="img44" src="/projects/MY_Pic.png" alt="">
+            
+           </div>
+    
+</body>
+</html>
