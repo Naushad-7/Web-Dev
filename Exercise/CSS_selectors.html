@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Selectors</title>
+    <style>
+      .container {
+        width: 300px;
+        height: 350px;
+        border: 2px solid red;
+        overflow: scroll;
+        margin: auto;
+      }
+      img {
+        width: 300px;
+        height: 300px;
+      }
+      img + p {
+        color: red;
+      }
+
+      /* from line 40
+            This example demostrates how to select the next sibling if the next sibling is of a specific type.
+        */
+
+      li:first-of-type + li {
+        color: blue;
+        font-weight: bolder;
+
+        /* we only style the <li> tha comes immediately after an <li> tha is the first of its type:  */
+      }
+
+      li:has(+ li:last-of-type) {
+        background-color: yellow;
+        /* we only style the <li> tha has a <li> tha is the last of its type */
+        color: black;
+      }
+
+      li:last-child {
+        background-color: red;
+        /* if u want to select the last of the list no the last of its type but the last of the list  */
+      }
+
+      li:first-child {
+        background-color: aquamarine;
+      }
+
+      /* chlid Combinator */
+
+      
+      span {
+          background-color: rgb(151, 248, 248);
+          /* margin: 20px; */
+        }
+        
+        /* The child combinator (>) is placed between two CSS selectors. It matches only those elements matched by the scond selector that are the direct children of elements matched by the first. */
+        
+        div > span {
+          /* border-top: 2px solid black; */
+        background-color: yellow;
+      }
+
+
+   /* Subsequent-sibling combinator */
+   /* The subsequent-sibling combinator (~, a tilde) separeates two selectors and matches all instances of the second element that folow the first element (not necessarily immediately) and share the same parent element. */
+
+   p ~ span {
+    color: rgb(228, 7, 81);
+    font-weight: bold;
+   }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <img src="/projects/project Pic/customer 2.jpg" alt="customer" />
+      <p>
+        This selector is called the Next-sibling combinator where we combine two
+        element together with (+) it matches the second selector only if it
+        immediatly follow the first element and both are the children of same
+        parent.
+      </p>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <div class="list">
+      <ul>
+        <li>one</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>four</li>
+        <li>five</li>
+      </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+      <span>
+        Span #1, in the div.
+        <span>Span #2, in the span that's in the div.</span>
+      </span>
+    </div>
+    <span>Span #3, not in the div at all.</span>
+    <br>
+    <br>
+    <article>
+        <span>This is not red because it appears before any paragraph.</span>
+        <p>Here is a paragraph.</p>
+        <code>Here is some code.</code>
+        <span>
+          This span is red because it appears after the paragraph, even though there
+          are other nodes in between.
+        </span>
+        <p>Whatever it may be, keep smiling.</p>
+        <h1>Dream big</h1>
+        <span>
+          Doesn't matter how many or what kind of nodes are in between, all spans from
+          the same parent after a paragraph are red.
+        </span>
+      </article>
+      <span>
+        This span is not red because it doesn't share a parent with a paragraph.
+      </span>
+
+      
+  </body>
+</html>
