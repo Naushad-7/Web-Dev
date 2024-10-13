@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Flexbox</title>
+
+    <style>
+        .container{
+            width: 90vw;
+            height: 70vh;
+            border: 2px solid red;
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+            align-content: start;
+            margin: auto;
+        }
+
+        .item{
+            margin: 10px;
+            border: 2px solid red;
+            width: 50px;
+            height: 50px;
+        }
+
+        .topic{
+            width: 90vw;
+            text-align: center;
+            border: 2px solid black;
+            margin: auto;
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        .item1{
+            /* there are total 16 boxes in the container and that container I'm using css flex order properties that will  allow me to change the order of the box numbering according to the value of the box.
+            the larger the number of the box item order the item will be placed last to the container */
+
+            /* like in this example I'm using order 15 that is last biggest number of the container so that item 1 will be at the end point of the container */
+            /* Indexing start in the container with 0 to N  */
+            order: 15;
+        }
+        .item5{
+            /* item 5 will be at first place because it is lest number in the container. */
+            order: -1;
+        }
+        .item7{
+            /* now here item 7 will be at last because -3 is lowest number now */
+            order: -3;
+            /* Flex grow properties incerease the size of the box number of times that we are giving the value in the flex-grow: 4; here in this example the item 7 that is on 1st num will be 4 times bigger than the other items in the container. */
+            flex-grow: 4;
+        }
+
+
+        .container2{
+            width: 90vw;
+            height: 50vh;
+            display: flex ;
+            margin: auto;
+            justify-content: center;
+            justify-content: space-around ;
+            border: 2px solid rgb(241, 10, 49);
+        }
+
+        .items{
+            width: 100px;
+            height: 100px;
+            border: 2px solid purple;
+            margin-top: 20px;
+        }
+
+        .items2{
+              /* Flex grow properties incerease the size of the box number of times that we are giving the value in the flex-grow: 4; here in this example the item 7 that is on 1st num will be 4 times bigger than the other items in the container. */
+            /* here box 2 will increase its size to 8 times as compare to other items. */
+            /* flex-grow: 2; */
+            flex-grow:2 ;
+        }
+
+
+        .items6{
+            /* flex shrink that is also flex item properties that will work on the item of the container 
+                IN this properties the item will shrink the number of time faster then the other item when we decrease the screen size or viewport of the device  */
+            flex-shrink: 4;
+            flex-grow: 5;
+        }
+        .items4{
+            flex-grow: 1;
+        }
+
+        /* The align-self properties of css that is also a part of the flex item properties that will align the item of the flexbox according the direction given in the properties that is used to aling seprate item that we want to display according to our need */
+
+        .items1{
+            /* it will send the box item 1 to the end point of the container */
+            align-self: flex-end;
+        }
+
+        .items5{
+            /* it will send the box item 5 to the center of the container  */
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+        <div class="item item4">Item 4</div>
+        <div class="item item5">Item 5</div>
+        <div class="item item6">Item 6</div>
+        <div class="item item7">Item 7</div>
+        <div class="item item8">Item 8</div>
+        <div class="item item9">Item 9</div>
+        <div class="item item10">Item 10</div>
+        <div class="item item11">Item 11</div>
+        <div class="item item12">Item 12</div>
+        <div class="item item13">Item 13</div>
+        <div class="item item14">Item 14</div>
+        <div class="item item15">Item 15</div>
+        <div class="item item16">Item 16</div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+    <hr style="color: solid blue;">
+<div class="topic">
+    <p>In this container we are designing the item of the coantianer for that we can use some css properties</p>
+</div>
+    <div class="container">
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item item3">Item 3</div>
+        <div class="item item4">Item 4</div>
+        <div class="item item5">Item 5</div>
+        <div class="item item6">Item 6</div>
+        <div class="item item7">Item 7</div>
+        <div class="item item8">Item 8</div>
+        <div class="item item9">Item 9</div>
+        <div class="item item10">Item 10</div>
+        <div class="item item11">Item 11</div>
+        <div class="item item12">Item 12</div>
+        <div class="item item13">Item 13</div>
+        <div class="item item14">Item 14</div>
+        <div class="item item15">Item 15</div>
+        <div class="item item16">Item 16</div>
+    </div>
+    <br>
+    <br>
+    <div class="container2">
+        <div class="items items1">Item 1</div>
+        <div class="items items2">Item 2</div>
+        <div class="items items3">Item 3</div>
+        <div class="items items4">Item 4</div>
+        <div class="items items5">Item 5</div>
+        <div class="items items6">Item 6</div>
+    </div>
+</body>
+</html>

@@ -11,19 +11,30 @@
             border: 2px solid rgb(3, 56, 202);
             width: 100vw;
             height: 80vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* flex-direction: row-reverse; */
-            flex-direction: column;
-            flex-direction: column-reverse;
             flex-direction: row;
-            justify-content: space-around;
+            display: flex;         /* display flex is by default to the row direction but if u want to change the direction u can  do that easily by using this property given below*/
+            flex-direction: column;
+            /* direction column-reverse will reverse the flow direction of column where end item will be at start and start will be at end */
+            flex-direction: column-reverse;
+             /* direction row-reverse will reverse the flow direction of row where end item will be at start and start will be at end */
+            flex-direction: row-reverse;
+            /* justify conternt: center will put the all item to the center of the main axis(horizontally) thit is row wise if we use flex direction row 
+            if we use flex direction column then item will be align vertically and the main axis will be flow direction of item that is column
+            */
+            justify-content: center;
+            /* align-item:center will align the content of the container to center according to the cross axis (vertically ) but the cross axis is vertically align only if the flow direction of the content is row */
+            /* if the item is align column wise then the cross axis will be horizontally and main axis will be vertically */
+            align-items: center;
+            
+            /* this will send the content of the container to right side of the container according to the main axis end point */
             justify-content: end;
+            /* this will start the item of the flex from the left side according to main axis start point */
             justify-content: start;
-            /*  */
             /* space between will give space between the content and first and the last item will be start and end position and space will according to that  */
             justify-content: space-between;
+            /* This will give the space all around the contianer item and give it equal space it is similar to space evenly */
+            justify-content: space-around;
+            /* space evenly will give the space between the content evenly or equaly */
             justify-content: space-evenly;
         }
 
