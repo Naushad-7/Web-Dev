@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.mainContainer{
+    width: 100vw;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; */
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 40vh;
+    border: 2px solid blue;
+    margin: 5px;
+
+
+}
+
+.item1{
+    width: 40vw;
+    height: 40vh;
+    border: 2px solid red;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.item1 ul{
+    list-style: none;
+}
+
+
+.leftContainer{
+    border: 2px solid red;
+    display: flex;
+    width: 40vw;
+    height:50vh ;
+    margin: 5px;
+    
+}
+
+.part1{
+    border: 1px solid red;
+    width: 20vw;
+    margin: 5px;
+}
+
+.part2{
+    border: 1px solid blue;
+    width: 20vw;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.part2Item{
+    border: 1px solid salmon;
+    /* width:20vw; */
+    height: 6vw;
+    margin: 5px;
+}
+
+.img1{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid red; */
+    width: 40vw;
+    height: 40vh;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.leftImg img{
+    position: relative;
+    bottom: 3em;
+    width: 40vw;
+    height: 40vh;
+    margin: 5px;
+    border: 2px solid red;
+}
+
+.rightImg img{
+    position: relative;
+    top: 1em;
+    width: 40vw;
+    height: 40vh;
+    margin: 5px;
+    border: 2px solid red;
+}
+
+
+.para{
+    display: flex;
+    gap: 16px;
+    margin: 5px;
+
+}
+
+.para1{
+    width: 40vw;
+    height: 20vh;
+    border: 2px solid red;
+    position: relative;
+    bottom: 2.5em;
+}
+
+.para2{
+    width: 40vw;
+    border: 2px solid red;
+    position: relative;   
+    top: 1.5em;
+}
+
+.leftImg1 img{
+    position: relative;
+    bottom: 7.5em;
+    width: 40vw;
+    height: 40vh;
+    margin: 5px;
+    border: 2px solid red;
+}
+
+.rightImg1 img{
+    position: relative;
+    top: 2em;
+    width: 40vw;
+    height: 40vh;
+    margin: 5px;
+    border: 2px solid red;
+}
+
+
+.line4{
+    width: 100vw;
+    /* height: 40vh; */
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    
+}
+
+
+.leftImg3 img{
+    position: relative;
+    bottom: 7.5em;
+    right: .34em;
+    width: 40vw;
+    height: 40vh;
+    margin: 5px;
+    border: 2px solid red;
+}
+
+.line4Para{
+    width: 40vw;
+    height: 20vh;
+    border: 2px solid red;
+    position: relative;
+    top: 2.5em;
+}
