@@ -23,7 +23,7 @@
     align-items: center;
     width: 40vw;
     height: 40vh;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     margin: 5px;
 
 
@@ -35,10 +35,14 @@
     border: 2px solid red;
     box-sizing: border-box;
     padding: 10px;
+    box-shadow: -2px -3px 5px blue,  2px 3px 8px rgb(240, 6, 45);
+    text-shadow: 4px 8px 4px rgb(253, 52, 86);
 }
 
 .item1 ul{
     list-style: none;
+    text-shadow: 4px 8px 4px rgb(17, 245, 150);
+
 }
 
 
@@ -48,6 +52,8 @@
     width: 40vw;
     height:50vh ;
     margin: 5px;
+    box-shadow: -2px -3px 5px rgb(240, 6, 45),  2px 3px 8px blue;
+    
     
 }
 
@@ -174,4 +180,125 @@
     border: 2px solid red;
     position: relative;
     top: 2.5em;
+}
+
+
+.line5{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 5px;
+}
+
+.line5Text{
+    width: 40vw;
+    height: 10vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    border: 2px solid red;
+    position: relative;
+    bottom: 14em;
+    right: .3em;
+}
+
+
+.line5Textleft{
+    width: 40vw;
+    height: 40vh;
+    border: 2px solid red;
+    position: relative;
+    bottom: 6.5em;
+    left: .3em;
+}
+
+.line6
+{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 5px;
+}
+
+.leftText6{
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    gap: 5px;
+    justify-content: center;
+    align-content: center;
+   
+}
+
+.line6text{
+    display: flex;
+    justify-content: spac;
+    align-items: center;
+    width: 20vw;
+    height: 10vh;
+    border: 2px solid red;
+    position: relative;
+    bottom: 20.2em;
+    right: .3em;
+
+}
+
+.line6RightText{
+    width: 40vw;
+    height: 10vh;
+    border: 2px solid red;
+    position: relative;
+    bottom: 6.5em;
+    left: .4em;
+}
+
+.line7{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin: 5px;
+    flex-wrap: wrap;
+
+}
+
+.line7Img img{
+    width: 40vw;
+    position: relative;
+    bottom: 20.2em;
+    right: 0.5em;
+
+}
+
+.line7ImgRight img{
+    width: 40vw;
+    position: relative;
+    bottom: 6.5em;
+    left: .4em;
+}
+
+.lastText{
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.lastText1{
+    display: flex;
+    width: 40vw;
+    height: 20vh;
+    border: 2px solid red;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 7.9em;
+    bottom: 20em;
 }
