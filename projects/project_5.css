@@ -11,13 +11,14 @@ body{
 .container{
     width: 100vw;
     text-align: center;
+    position:sticky;
+    top: 0;
 }
 
 .navbar{
     background-color: #333;
     font-size: x-large;
     padding: 10px;
-    position: sticky;
 }
 
 .navbar span{
@@ -34,31 +35,34 @@ body{
     background-color: aqua;
     width:95vw;
     height: 26em;
+    text-align: center;
     margin: auto;
-    position: relative;
-
 }
 
+.leftImg, .rightImg{
+    display: inline-block;
+    margin: 40px 90px;
+    
+}
 
 .leftImg img{
+    display: inline-block;
     border: 2px solid red;
-    width: 15em;
-    height: 15em;
-    float: left;
-    position: relative;
-    top: 5em;
-    left: 15em;
+    width: 20em;
+    height: 20em;
+    margin: auto;   
 
 }
 
+    
+
+
 .rightImg img{
+    display: inline-block;
     border: 2px solid blue;
-    width: 15em;
-    height: 15em;
-    float: right;
-    position: relative;
-    top: 5em;
-    right: 15em;
+    width: 20em;
+    height: 20em;
+    margin: auto;
 }
 
 
