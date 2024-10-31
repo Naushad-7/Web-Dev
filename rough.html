@@ -157,3 +157,78 @@ img{
         <img src="/projects/project Pic/Travel.jpg" alt="" />
       </div>
     <!-- </div> -->
+
+
+
+
+
+    <!-- Tansition -->
+
+
+
+    .transions{
+        width: 400px;
+        height: 200px;
+        background-color: beige;
+        color: rgb(53, 142, 243);
+        margin-left: 20px;
+        transition-property: all;
+        transition-duration: 4s;
+        transition-timing-function: ease-in;
+
+
+    }
+     /* h1{
+        margin-top: 20px;
+        padding-top: 80px;
+        padding-left: 20px;
+    } */
+
+    .transions:hover{
+        position: relative;
+        top: 50px;
+        width: 500px;
+        height: 300px;
+        background-color: black;
+    }
+
+    .transions h2{
+        color: rebeccapurple;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity 0.5s ease-in-out;
+
+    }
+
+    .old-text {
+    opacity: 1;
+    }
+
+    .new-text {
+    opacity: 0;
+    }
+
+    .transions:hover .old-text {
+    opacity: 0;
+    }
+
+    .transions:hover .new-text {
+        /* background-color: black; */
+        color: white;
+    opacity: 1;
+    }
+
+</style>
+</head>
+<body>
+<!-- <div class="conatiner">
+    <div class="box1">box one</div>
+    <div class="circle">
+        
+    </div>
+    <div class="box2"></div>
+</div> -->
+
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Animation
+    </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            position: relative;
+            width: 90vw;
+            height: 90vh;
+
+        }
+        .box1{
+            background-color: black;
+            width: 200px;
+            height: 50px;
+            color: white;
+            text-align: center; 
+            position: relative;
+            top: 0;
+            left: 0;
+            animation: rightMove 5s linear 1s infinite alternate forwards ;
+        }
+
+        @keyframes rightMove {
+            from{
+                top: 0;
+                left: 0;
+            }
+
+            to{
+                top: 0;
+                left: 1165px;
+            }
+
+        }
+        .box2{
+            background-color: red;
+            /* margin-top: 100px; */
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            position: relative;
+            top: 555px;
+            left: 1165px;
+            animation: leftMove 5s linear 1s infinite alternate forwards ;
+        }
+
+        @keyframes leftMove {
+            from{
+                top: 550px;
+                left: 1165px;
+
+            }
+
+            to{
+                top: 550px;
+                left: 0;
+            }
+
+        }
+
+        .box3{
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            background-color: blue;
+            color: white;
+            position: relative;
+            top: -100px;
+            left: 1165px;
+            animation: downMove 5s linear 1s infinite alternate forwards ;
+        }
+
+        @keyframes downMove {
+            from{
+                top: -100px;
+                left: 1165px;
+
+            }
+            to{
+                top: 500px;
+                left: 1165px;
+            }
+        }
+
+        .box4{
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            background-color: yellow;
+            color: black;
+            position: relative;
+            top: 455px;
+            left: 0;
+            animation: upperMove 5s linear 1s infinite alternate forwards ;
+        }
+
+        @keyframes upperMove {
+            from{
+                top: 455px;
+                left: 0;
+
+            }
+            to{
+                top: -150px;
+                left: 0;
+            }
+        }
+        p{
+            font-size: large;
+            font-weight: bolder;
+            padding: 14px;
+        }
+        
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="box1">
+                <p>I'm box One</p>
+            </div>
+
+            <div class="box2">
+                <p>I'm box Two</p>
+            </div>
+
+            <div class="box3">
+               <p>I'm box Three</p> 
+            </div>
+            <div class="box4">
+                <p>I'm box Four</p>
+            </div>
+        </div>
+</body>
+</html>
