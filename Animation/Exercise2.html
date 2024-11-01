@@ -1,87 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rectangular Motion</title>
     <style>
-        body {
-            margin: 0;
-            overflow: hidden;
-        }
-        .container {
-            display: flex;
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+      .container {
+        display: flex;
 
-            position: relative;
-            width: 100vw;
-            height: 100vh;
-        }
-        .box {
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            background-color: red;
-            animation: moveRect 8s linear infinite;
-        }
-        .box2 {
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            background-color: blue;
-            animation: moveRect 8s linear infinite;
-            animation-delay: 2s; /* Delay to start after the first box */
-        }
-        .box3{
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            background-color: yellow;
-            animation: moveRect 8s linear infinite;
-            animation-delay: 4s;
-        }
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+      }
+      .box {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        animation: moveRect 8s linear infinite;
+      }
+      .box2 {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: blue;
+        animation: moveRect 8s linear infinite;
+        animation-delay: 2s; /* Delay to start after the first box */
+      }
+      .box3 {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: yellow;
+        animation: moveRect 8s linear infinite;
+        animation-delay: 4s;
+      }
 
-        .box4{
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            background-color: green;
-            animation: moveRect 8s linear infinite;
-            animation-delay: 6s;
-        }
+      .box4 {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: green;
+        animation: moveRect 8s linear infinite;
+        animation-delay: 6s;
+      }
 
-        @keyframes moveRect {
-            0% { top: 0; left: 0; }
-            25% { top: 0; left: calc(100vw - 50px); }
-            50% { top: calc(100vh - 50px); left: calc(100vw - 50px); }
-            75% { top: calc(100vh - 50px); left: 0; }
-            100% { top: 0; left: 0; }
+      @keyframes moveRect {
+        0% {
+          top: 0;
+          left: 0;
         }
-        .circle{
-            position: absolute;
+        25% {
+          top: 0;
+          left: calc(100vw - 50px);
+        }
+        50% {
+          top: calc(100vh - 50px);
+          left: calc(100vw - 50px);
+        }
+        75% {
+          top: calc(100vh - 50px);
+          left: 0;
+        }
+        100% {
+          top: 0;
+          left: 0;
+        }
+      }
+      .circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 40px;
+        background-color: black;
+        width: 50px;
+        height: 50px;
+        animation: circMove 8s linear infinite;
+        animation-delay: 8s;
+      }
+      
+      @keyframes circMove {
+        0%{
             top: 50%;
             left: 50%;
-            border-radius: 40px;
-            background-color: black;
-            width: 50px;
-            height: 50px;
-            animation: circMove 8s linear infinite;
-            animation-delay: 8s;
+            transform: translate(-50%, -50%);
         }
-        @keyframes circMove {
-            0%{
-                transform: translate();
-            }
-            
+
+        20%{
+            top: 0;
+            left: 0;
+            transform: translate(0%, 0%);
         }
+
+        40%{
+            top: 100%;
+            left: 100%;
+            transform: translate(-100%, -100%);
+        }
+
+        60%{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        80%{
+            top: 100%;
+            left: 0;
+            transform: translate(0, -100%);
+        }
+
+        90%{
+            top: 0;
+            left: 100%;
+            transform: translate(-100%, 0);
+        }
+
+        100%{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+        
+      }
+
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="box"></div>
-        <div class="box2"></div>
-        <div class="box3"></div>
-        <div class="box4"></div>
-        <div class="circle"></div>
+      <div class="box"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <div class="box4"></div>
+      <div class="circle"></div>
     </div>
-</body>
+  </body>
 </html>
