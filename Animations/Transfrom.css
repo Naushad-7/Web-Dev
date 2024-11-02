@@ -1,0 +1,180 @@
+.wrap{
+    max-width: 1000px;
+    width: 90vw;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 2px solid red;
+}
+
+.box{
+    width: calc(25%);
+    margin: 20px 20px;
+    background: #48f5cf;
+    cursor: pointer;
+    color: #FFF;
+    text-align: center;
+    line-height: 130px;
+    box-sizing: border-box;
+    /* border: 2px solid black; */
+
+}
+p{
+    font-style: italic;
+    font-size: larger;
+    font-weight: bolder;
+    color: rgba(32, 243, 208, 0.979);
+}
+
+.bgColor{
+    background-color: rgb(235, 84, 109);
+    border: 2px solid blue;
+    animation: spin 3s linear infinite;
+    position: relative;
+}
+
+@keyframes spin {
+        0% {
+           border-color: black;
+          }
+      
+          50% {
+            border-color: blue;
+          }
+          100% {
+           border-color: red;
+          }
+        
+    }
+    
+
+.skew{
+    /* width: calc(100%); */
+    background-color: rgb(235, 84, 109);
+    transform: skew(1,1);
+    transition: transform 1s ease;
+}
+
+
+.box:hover .skew{
+    transform: skew(20deg,10deg);
+}
+
+.skewX{
+    transform: skewX(1);
+    transition: transform 1s ease;
+}
+
+.box:hover .skewX{
+    transform: skewX(30deg);
+}
+
+
+.skewY{
+    transform: skewY(1);
+    transition: transform 1s ease;
+}
+
+.box:hover .skewY{
+    transform: skewY(20deg);
+}
+
+
+.scale{
+    transform: scale(0.5,0.5);
+    transition: transform 1s ease;
+}
+
+.box:hover .scale{
+    transform: scale(1,1);
+}
+
+
+.scaleX{
+    transform: scaleX(1);
+    transition: transform 1s ease;
+}
+
+.box:hover .scaleX{
+    transform: scaleX(1.5);
+}
+
+.scaleY{
+    transform: scaleY(.5);
+    transition: transform 1s ease;
+}
+
+.box:hover .scaleY{
+    transform: scaleY(1);
+}
+
+
+.translate{
+    transform: translate(0,0);
+    transition: transform 2s ease;
+}
+
+.box:hover .translate{
+    transform: translate(10%,20%);
+}
+
+.translateX{
+    transform: translateX(0%);
+    transition: transform 2s ease;
+}
+
+.box:hover .translateX{
+    transform: translateX(20%);
+}
+
+
+.translateY{
+    transform: translateY(0%);
+    transition: transform 2s ease;
+}
+
+.box:hover .translateY{
+    transform: translateY(10%);
+}
+
+
+.rotate{
+    transform: rotate(0deg);
+    transition: transform 3s ease;
+}
+
+.box:hover .rotate{
+    transform: rotate(30deg);
+}
+
+.rotateX{
+    transform: rotateX(0deg);
+    transition: transform 2s ease;
+}
+
+.box:hover .rotateX{
+    transform: rotateX(60deg);
+}
+
+.rotateY{
+    transform: rotateY(0deg);
+    transition: transform 2s ease;
+}
+
+.box:hover .rotateY{
+    transform: rotateY(60deg);
+}
+
+
+.matrix{
+    transform: matrix(1, 1, 1, 1,);
+    transition: transform 2s ease;
+}
+
+.box:hover .matrix{
+    transform: matrix(1,-1,0,1,0,0);
+}
