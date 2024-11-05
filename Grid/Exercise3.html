@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Grid</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+      }
+      .container {
+        background-color: #FFFFFF;
+        background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #FF0000 100%);
+        display: grid;
+        gap: 20px;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: [first] 300px [second] 200px [third] 200px;
+        grid-template-rows: [first] 100px [second] 200px [third] 150px [forth] 100px;
+        grid-template-areas: "header header header"
+                             "sidebar . sidebar1"
+                             "content1 content1 content2"
+                             "footer footer footer";
+        justify-content: center;
+        align-content: center;
+
+
+      }
+
+      .header{
+        grid-area: header;
+      }
+
+      .sidebar{
+        grid-area: sidebar;
+      }
+
+      .footer{
+        grid-area: footer;
+      }
+
+      .sidebar1{
+        grid-area: sidebar1;
+      }
+
+      .content1{
+        grid-area: content1;
+      }
+
+      .content2{
+        grid-area: content2;
+      }
+
+
+
+      .item{
+        background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: copperplate, papyrus,fantasy;
+        font-size: x-large;
+        font-weight: bolder;
+
+      }
+
+
+      @media screen and (max-width:740px) {
+        .container{
+           display: grid;
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item header">Header</div>
+      <div class="item sidebar">SideBar</div>
+      <div class="item sidebar1">Sidebar1</div>
+      <div class="item content1">Content1</div>
+      <div class="item content2">Content2</div>
+      <div class="item footer">Footer</div>
+    </div>
+  </body>
+</html>

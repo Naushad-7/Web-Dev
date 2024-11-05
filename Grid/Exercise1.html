@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout Using Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+
+
+        }
+        .container{
+            width: 80%;
+            height: 100%;
+            background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+            margin: auto;
+           
+        }
+
+        .item{
+            background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: x-large;
+            font-weight: bold;
+            color:white;
+        }
+
+        .container2{
+            width: 80%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6,1fr);
+            gap: 10px;
+            margin: auto;
+        }
+
+        .items{
+            background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            font-weight: bold;
+            color: #322576;
+    
+
+        }
+
+      
+
+        @media screen and (min-width:776px) {
+            .container2{
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+                grid-template-rows: [first] 100px [second] 100px  [third] 150px [forth] 100px;
+                justify-content: center;
+                align-content: center;
+                gap: 15px;
+                width: 80%;
+                margin: auto;
+
+            }
+
+            .items{
+                background-image: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+
+            }
+                .header{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .aside{
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        .content1{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+
+        .footer{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+
+        .container{
+            width: 80%;
+            height: 100%;
+            background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+            display: grid;
+            gap: 10px;
+            /* grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr; */
+            grid-template-columns: [first] 150px [line2] 200px[line3] 150px;
+            grid-template-rows: [first] 150px [line2] 150px;
+            justify-content: center;
+            align-content: center;
+            margin: auto;
+        }
+            
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class=" item item1">Header</div>
+      <div class=" item item2">Aside Bar</div>
+      <div class=" item item3">Content 1</div>
+      <div class=" item item4">Content 2</div>
+      <div class=" item item5">Content 3</div>
+      <div class=" item item6">Footer</div>
+    </div>
+
+
+    <div class="container2">
+        <div class="items header">Header</div>
+        <div class="items aside">Aside Bar</div>
+        <div class="items content1">Content 1</div>
+        <div class="items">Content 2</div>
+        <div class="items">Content 3</div>
+        <div class="items footer">Footer</div>
+    </div>
+  </body>
+</html>

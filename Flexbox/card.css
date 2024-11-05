@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(163, 241, 212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 300px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 2px 3px 20px 5px rgb(245, 107, 107);
+    transition: all 1s ease-in;
+  }
+
+  .boxItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+  }
+  .box img {
+    width: 250px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 2px 3px 20px 8px rgb(207, 145, 145);
+  }
+
+  .box h2 {
+    font-size: 21px;
+    margin: 5px;
+    color: red;
+  }
+
+  .box p {
+    font-size: 18px;
+    margin: 5px;
+  }
+
+  .box:hover {
+    transform: scale(1.1);
+  }
+
+
+  /* flip Card CSS */
+
+.box1 img{
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 2px 3px 10px 8px rgb(207, 145, 145);
+
+}
+
+
+.box1{
+    background-color: transparent;
+    width: 340px;
+    height: 360px;
+    perspective: 1000px;
+    box-shadow: 2px 3px 20px 5px rgb(245, 107, 107);
+    border-radius: 20px;
+}
+
+.boxItem1{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.frontPart, .backPart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+}
+
+.frontPart{
+    background-color: aliceblue;
+}
+
+.backPart{
+    background-color: #f0f0f0;
+    transform: rotateY(180deg);
+    padding: 20px;
+}
+
+.box1:hover .boxItem1{
+    transform: rotateY(180deg);
+    transition: transform 2s ease-in-out;
+}
+
+.frontPart h2, .backPart h2{
+    margin-top: 12px;
+    color:rgb(245, 107, 107) ;
+}
+
+.frontPart p{
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
