@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6,150px);
+    grid-template-rows: repeat(6,100px);
+
+    grid-template-areas: 
+                            "feature1 feature1 header header header header"
+                            "sidebar product product product product feature2"
+                            "sidebar bonus1 . . bonus3 feature3"
+                            "sidebar . bonus2 . . bonus4"
+                            "sidebar footer footer footer footer footer";
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(230, 230, 230);
+    gap: 10px;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(48, 44, 44);
+}
+
+
+.feature1{
+    grid-area: feature1;
+    background-color: red;
+}
+
+.header{
+    grid-area: header;
+    background-color: black;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: green;
+}
+
+.product{
+    grid-area: product;
+    background-color: blue;
+}
+.feature2{
+    grid-area: feature2;
+    background-color: red;
+}
+
+.bonus1{
+    grid-area: bonus1;
+    background-color: red;
+}
+
+.bonus3{
+    grid-area: bonus3;
+    background-color: red;
+}
+
+.feature3{
+    grid-area: feature3;
+    background-color: red;
+}
+
+.bonus2{
+    grid-area: bonus2;
+    background-color: red;
+}
+
+.bonus4{
+    grid-area: bonus4;
+    background-color: red;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: yellow;
+}
+/* .feature1{
+    grid-column: 1 / 3;
+    grid-row: 1/2;
+    background-color: red;
+}
+
+.header{
+    grid-column: 3 / 7;
+    grid-row: 1/2;
+    background-color: black;
+}
+.sidebar{
+    grid-column: 1/2;
+    grid-row: 2/7 ;
+    background-color: green;
+}
+
+.product{
+    grid-column: 2/6;
+    grid-row: 2/4;
+    background-color: blue;
+}
+
+.feature2{
+    grid-column: 6/7;
+    grid-row: 2/3;
+    background-color: red;
+}
+
+.bonus1{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    background-color: red;
+}
+
+.bonus3{
+    grid-column: 5/6;
+    grid-row: 4/5;
+    background-color: red;
+}
+
+.feature3{
+    grid-column: 6/7;
+    grid-row: 4/5;
+    background-color: red;
+}
+
+.bonus2{
+    grid-column: 3/4;
+    grid-row: 5/6;
+    background-color: red;
+}
+
+.bonus4{
+    grid-column: 6/7;
+    grid-row: 5/6;
+    background-color: red;
+}
+
+.footer{
+    grid-column: 2/7;
+    grid-row: 6/7 ;
+    background-color: yellow;
+} */
+
+
+
+/* media query */
+
+
+@media screen and (max-width:796px){
+    .container{
+        border: 2px solid red;
+        background-color: rgb(230, 123, 123);
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 100px);
+        grid-template-rows: repeat(6, 80px);
+        justify-content: center;
+        align-content: center;
+    }
+    
+}
+
+@media screen and (max-width:665px){
+    .container{
+        display: grid;
+        grid-template-rows: repeat(7, 80px);
+        grid-template-columns: repeat(4, 100px);
+
+        grid-template-areas: 
+                                "header header header header"
+                                "sidebar sidebar sidebar sidebar"
+                                "product product product feature2"
+                                "feature1 feature1 bonus1 ."
+                                ". bonus3 . bonus2"
+                                ". bonus4 . feature3"
+                                "footer footer footer footer"
+                                ;
+        
+    }
+}
