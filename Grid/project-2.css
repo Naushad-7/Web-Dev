@@ -11,28 +11,41 @@ body{
 }
 
 .container{
-    /* width: 75vw; */
     max-width: 85vw;
     padding: 2rem 1rem; 
     margin: 0 auto;
 }
 
 
-.header-text{
+.header-text h1{
     text-align: center;
-    line-height: 3rem;
+    /* line-height: 5rem; */
     font-family: copperplate, papyrus,fantasy;
-    font-size: 1.2rem;
+    font-size: 4rem;
     font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.header-text p{
+    text-align: center;
+    line-height: 2rem;
+    font-weight: bold;
+    font-family: copperplate, papyrus,fantasy;;
+    font-size: 1.5rem;
+    max-width: 80vw;
 }
 
 .main-container{
-    border: 1px solid rebeccapurple;
-    /* width: 70vw; */
+    /* border: 1px solid rebeccapurple; */
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 250px));
+    justify-content: center;
     margin-top: 3rem;
-    box-shadow: 2px 3px 5px;
+    border-radius: 10px;
+    gap: 1.5rem;
 
 }
 
@@ -40,18 +53,19 @@ body{
 .card-container{
     display: flex;
     flex-direction: column;
-    padding: 1rem;
-    margin: 1rem;
-    border: 1px solid rgb(168, 164, 164);
-    border-radius: 10px;
+    /* padding: 1rem; */
+    /* margin: 1rem;     */
+    border-radius: .9rem;
     justify-content: center;
     box-shadow: 3px 8px 10px;
+    background-color: white;
 }
 
 .card-img-container{
     position: relative;
-    height: 16rem;
+    height: 12rem;
     overflow: hidden;
+
 
 }
 
@@ -59,9 +73,9 @@ body{
  position:absolute;
  object-fit:cover;
  object-position: center;
+ border-radius: 0.9rem 0.9rem 0 0;
  width: 100%;
  height: 100%;
- border-radius: 10px;
 }
 
 
@@ -70,18 +84,29 @@ a{
 }
 
 .card-title{
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 }
 
-.card-title a h2{
-    color: black;
-    font-size: 1.65rem;
-    line-height: 3rem;
+.card-title h2{
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    margin: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.card-title p{
+    /* line-height: 2.5rem; */
+    margin: 0 0.5rem 0 0.5rem;
+
 }
 
 .card-title h2:hover{
     color: rgb(76, 76, 187);
+    cursor: pointer;
 }
+
+/* .time-text{
+    font-size: 1.rem;
+} */
 
 .card-footer{
     width: 100%;
@@ -89,15 +114,14 @@ a{
     display: flex;
     gap: 1rem;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
     margin-top: 1rem;
 }
 
 .card-footer img{
     display: flex;
-    width: 3rem;
-    align-items: center;
-    border: 1px solid black;
+    width: 2.6rem;
+    border: 1px solid rgb(173, 141, 141);
     border-radius: 3rem;
 }
 
@@ -106,29 +130,28 @@ a{
     gap: 0.7rem;
     align-items: center;
 }
+
+.footer-img img{
+    background-color: rgb(235, 223, 223);
+}
+
 .footer-info{
     display: flex;
     flex-direction: column;
 }
 
 .footer-info h3{
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: bolder;
 }
 
 .footer-info p{
-    font-size: 0.9rem;
-}
-
-.footer-button{
-    /* position: relative; */
+    font-size: 0.7rem;
 }
 
 button{
-    width: 5.5rem;
-    height: 2rem;
-    font-size: 0.8rem;
-    font-weight: 500;
+  padding: 0.2rem;
+  border-radius: 0.3rem;
 }
 
 .card-container:hover .card-img-container{
