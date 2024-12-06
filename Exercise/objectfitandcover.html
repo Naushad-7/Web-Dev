@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object fit and object position and background-image </title>
+  <style>
+
+    .main-container{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .container{
+      border: 1px solid sienna;
+      width: 550px;
+      height: 450px;
+      margin: auto;
+    }
+
+    .container img{
+      width: 550px;
+      height:450px ;
+      object-fit: cover;
+      object-position: center right;
+      filter: blur(5px);
+    }
+    .container2{
+      border: 1px solid sienna;
+      width: 350px; 
+      height: 250px;
+      margin: auto;
+    
+    }
+    .container2 img{
+      width: 350px; 
+      height: 250px;
+      object-fit: contain;
+      /* object-position:left; */
+      /* object-position: top right; */
+      filter: invert(1);
+    }
+
+    .container3{
+      background-color: rebeccapurple;
+      width: 550px;
+      height: 450px;
+      background-image:url(/projects//projectPic/event_colorful.jpg);
+      background-position: center;
+    }
+
+    .filter{
+      width: 300px;
+      height: 250px;
+
+    }
+
+    .filter img{
+      width: 300px;
+      height: 250px;
+      object-fit: cover;
+      filter: grayscale(100%);
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="container">
+      <img src="/projects/beach.jpg" alt="">
+    </div>
+
+    <div class="container2">
+      <img src="/projects/beach.jpg" alt="">
+    </div>
+
+    <div class="container3">
+    </div>
+    <div class="container2">
+      <img src="/projects/beach.jpg" alt="">
+    </div>
+
+    <div class="filter">
+      <img src="/projects/projectPic/airplane.jpg" alt="">
+    </div>
+  </div>
+</body>
+</html>
