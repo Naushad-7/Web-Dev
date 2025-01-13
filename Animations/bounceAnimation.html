@@ -13,11 +13,14 @@
         }
 
         .box{
-            width: 1000px;
-            height: 300px;
-            background-color: black;
+            width: 80vw;
+            height: 80vh;
+            /* background-color: black; */
+            border-bottom: 2px solid black;
             margin: auto;
-            margin-top: 50px;
+            /* margin-top: 50px; */
+            position: relative;
+            border: 1px solid red;
         }
 
         .circle{
@@ -25,13 +28,14 @@
             width: 100px;
             height: 100px;
             border-radius: 50px;
-            position: relative;
-            top: 199px;
-            /* animation: bounce 5s ease 1s infinite; */
-            animation: bounce 5s linear 1s infinite ;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            animation: animateX 5s linear infinite, animateY 2s ease-out infinite alternate;
+            /* animation: bounce 5s linear infinite alternate; */
             
         }
-
+/* 
         @keyframes bounce {
             0% {
                 top: 199px;
@@ -39,24 +43,44 @@
             }
 
             30%{
-                top: 50px;
-                left: 300px;
+                top: 0;
+                left: 250px;
 
             }
 
             60%{
                 top: 199px;
-                left: 600px;
+                left: 500px;
             }
 
             100%{
-                top: 50px;
+                top: 0;
                 left: 900px;
+            }
+            
+        } */
+
+        @keyframes animateX {
+            from{
+                left: 0;
+            }
+
+            to{
+                left: 100%;
             }
             
         }
 
+        @keyframes animateY {
+            from{
+                bottom: 0;
+            }
 
+            to{
+                bottom: 100%;
+            }
+            
+        }
         
     </style>
 </head>
