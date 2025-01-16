@@ -53,7 +53,7 @@ function getSum(n1, n2, n3)
 }
 console.log("The sum of three numbers");
 let ans = getSum(2,3,6);
-console.log(sum);
+console.log(ans);
 
 
 
