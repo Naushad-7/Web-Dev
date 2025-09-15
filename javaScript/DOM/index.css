@@ -1,0 +1,27 @@
+#heading1{
+    color: blue;
+    background-color: yellow;
+
+}
+
+#container{
+    background-color: red;
+    margin: 20px;
+    padding: 20px;
+}
+
+.box, .redbox{
+    border: 2px solid rgb(0, 0, 0);
+    width: 80px;
+    height: 50px;
+    margin: 10px;
+    /* background-color: red; */
+    
+}
+
+#redbox{
+    border: 2px solid black;
+    width: 80px;
+    height: 50px;
+    margin: 10px;
+}
