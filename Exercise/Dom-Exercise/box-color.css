@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 8rem;
+    height: 4rem;
+    border: 1px solid red;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#color {
+    width: 10rem;
+    height: 3rem;
+    background-color: rgb(105, 17, 17);
+    color: white;
+    text-align: center;
+    margin-left: 45%;
+   
+}
