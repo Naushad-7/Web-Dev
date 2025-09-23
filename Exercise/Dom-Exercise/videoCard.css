@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+
+.card{
+    display: flex;
+    position: relative;
+    border: 1px solid black;
+}
+
+.card .capsule{
+
+    position:absolute;
+    bottom: 5px;
+    z-index: 10;
+    left: 96px;
+    background-color: rgb(43, 38, 38);
+    opacity: 0.8;
+    color: white;
+}
+
+.card img{
+    width: 130px;
+    height: 130px;
+    margin-right: 1rem;
+}
+
+.context  h1{
+    margin-bottom: 3rem;
+}
+.context p{
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+}
+
+.context .text{
+    display: flex;
+    /* justify-content:space-around; */
+}
+
+.context .text p{
+    margin-left: 3rem;
+}
+
