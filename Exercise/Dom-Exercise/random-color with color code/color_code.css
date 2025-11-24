@@ -1,0 +1,26 @@
+.contianer{
+
+}
+.mainbox{
+    display: flex;
+    border: 1px solid black;
+}
+
+.imgbox img{
+    width: 110px;
+    height: 110px;
+    margin-top: 1.6rem;
+}
+
+
+
+.texbox{
+    display: flex;
+}
+
+
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
