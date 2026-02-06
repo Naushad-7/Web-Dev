@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Callback Example</title>
+    <script src="callback.js"></script>
+</head>
+<body>
+<!-- 
+<script>
+console.log("Tony Stark"); // that is a sychronous code it will execute first 
+console.log("IronMan");
+
+setTimeout (() => { //this is an asychronous coce that will take time to execute after everycode will run because it will go to the browser right after the call stack then it will load there after comleting the time it will go to the callaback then will again goto the callstack then print the code........................
+    console.log("I'm inside the timeout function")
+}, 2000);
+
+console.log("life line");
+
+
+console.log("Captain America");
+console.log("captain of the Avengers");
+
+setTimeout(() => {
+    console.log("captain America was the first man who become a super soldier");
+}, 2000);
+
+console.log("He was the first superhero");
+
+
+
+const fn = () => {
+    console.log("ready to fight");
+}
+const callback = (message, fn) => {
+    console.log(message);
+    fn();
+};
+
+const loadScript = (src, callback) => {
+    let sc = document.createElement("script");
+    sc.src = src;
+    sc.onload = () => callback("Avengers Assemble", fn);
+    document.head.append(sc);
+};
+
+loadScript("https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js", callback);
+</script> -->
+
+</body>
+</html>
